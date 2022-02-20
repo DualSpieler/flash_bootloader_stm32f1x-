@@ -31,7 +31,7 @@ typedef enum HAL_Status
 #include "stm32f10x.h"
 
 /*< Cortex-M3 specific header */
-#include "../core/api/core.h"
+//#include "../core/api/core.h"
 
 /*< Driver header files. */
 #include "../clock/api/clock.h"

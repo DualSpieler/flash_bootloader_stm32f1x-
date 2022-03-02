@@ -1,0 +1,4 @@
+// Hint files help the Visual Studio IDE interpret Visual C++ identifiers
+// such as names of functions and macros.
+// For more information see https://go.microsoft.com/fwlink/?linkid=865984
+#define DEFINE_COMM_MESSAGE COMM_MESSAGE (Comm_Alive, 1U , "alive message") COMM_MESSAGE (Comm_Ack, 1U, "acknowledge message") COMM_MESSAGE (Comm_Nack, 1U, "not acknowledge message")

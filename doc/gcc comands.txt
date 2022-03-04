@@ -1,0 +1,29 @@
+Compilation Process Build step by step:
+
+/*****************************************************
+1.c file to proprocessor file using proprocessor(.i):
+
+gcc -E file.c
+
+*****************************************************/
+
+/*****************************************************
+2.c file to assembly file using compilar(.asm/.s):
+
+gcc -S file.c
+*****************************************************/
+
+/*****************************************************
+3.c file to object file using assembler(.o/.obj):
+
+gcc -c test.c 
+*****************************************************/
+
+/*****************************************************
+4.c file to executable file using linker(.exe/.hex/.bin):
+
+gcc test.c -o test.exe
+*****************************************************/
+
+Reference:
+https://medium.com/@laura.derohan/compiling-c-files-with-gcc-step-by-step-8e78318052

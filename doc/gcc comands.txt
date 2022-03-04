@@ -25,5 +25,10 @@ gcc -c test.c
 gcc test.c -o test.exe
 *****************************************************/
 
-Reference:
+Gcc commands Reference:
 https://medium.com/@laura.derohan/compiling-c-files-with-gcc-step-by-step-8e78318052
+
+
+C program real time Compilation Errors and Fix:
+1.https://docs.microsoft.com/en-us/cpp/error-messages/compiler-errors-1/compiler-error-c2002?view=msvc-170
+2.https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-error-lnk2019?f1url=%3FappId%3DDev16IDEF1%26l%3DEN-US%26k%3Dk(LNK2019)%26rd%3Dtrue&view=msvc-170

@@ -27,21 +27,14 @@ typedef enum HAL_Status
 /*< Portable data types */
 #include <stdint.h>
 
-/*< string library */
-#include <string.h>
-
-/*< custom library */
-#include <myLib.h>
-
 /*< Controller specific Header file. */
 #include "stm32f10x.h"
 
 /*< Cortex-M3 specific header */
-#include "../core/api/core.h"
+//#include "../core/api/core.h"
 
 /*< Driver header files. */
 #include "../clock/api/clock.h"
-#include "../gpio/api/gpio.h"
-#include "../uart/api/uart.h"
+
 
 #endif //__HAL_INCLUDES_H__

@@ -1,0 +1,34 @@
+Compilation Process Build step by step:
+
+/*****************************************************
+1.c file to proprocessor file using proprocessor(.i):
+
+gcc -E file.c
+
+*****************************************************/
+
+/*****************************************************
+2.c file to assembly file using compilar(.asm/.s):
+
+gcc -S file.c
+*****************************************************/
+
+/*****************************************************
+3.c file to object file using assembler(.o/.obj):
+
+gcc -c test.c 
+*****************************************************/
+
+/*****************************************************
+4.c file to executable file using linker(.exe/.hex/.bin):
+
+gcc test.c -o test.exe
+*****************************************************/
+
+Gcc commands Reference:
+https://medium.com/@laura.derohan/compiling-c-files-with-gcc-step-by-step-8e78318052
+
+
+C program real time Compilation Errors and Fix:
+1.https://docs.microsoft.com/en-us/cpp/error-messages/compiler-errors-1/compiler-error-c2002?view=msvc-170
+2.https://docs.microsoft.com/en-us/cpp/error-messages/tool-errors/linker-tools-error-lnk2019?f1url=%3FappId%3DDev16IDEF1%26l%3DEN-US%26k%3Dk(LNK2019)%26rd%3Dtrue&view=msvc-170

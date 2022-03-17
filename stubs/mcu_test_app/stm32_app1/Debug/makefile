@@ -53,6 +53,7 @@ clean:
 post-build:
 	-@echo 'Generating binary and Printing size information:'
 	arm-none-eabi-objcopy -O binary "stm32_app1.elf" "stm32_app1.bin"
+	arm-none-eabi-objcopy -O ihex "stm32_app1.elf" "stm32_app1.hex"
 	arm-none-eabi-size "stm32_app1.elf"
 	-@echo ' '
 

@@ -13,8 +13,10 @@ int main(void)
 
 void Sys_Init(void)
 {
-	/*< port A clock initialization */
+	/*< GPIO clock initialization */
+#if 0
 	GPIO_Clock_Init();
+#endif
 
 	/*< communication initialization */
 	Comm_Init();
@@ -24,7 +26,19 @@ void Sys_Run(void)
 {
 	while (1)
 	{
-		SI_Rx_Handler();
+		Comm_TxString();
+
+		Sys_Delay();
+	}
+}
+
+void Sys_Delay(void)
+{
+	uint16_t i, j;
+
+	for (i = 0; i < 100; i++)
+	{
+		for (j = 0; j < 100; j++);
 	}
 }
 

@@ -27,7 +27,7 @@
 #define SYSTEM_CLOCK_SET  SYSTEM_CLOCK_48MHZ
 
 /*!< Vector Table base offset field. This value must be a multiple of 0x200. */
-#define VECT_TAB_OFFSET  0x0
+#define VECT_TAB_OFFSET  ((uint32_t)0x5C00)
 
 
 #endif //__CLOCK_CFG_H__

@@ -93,10 +93,12 @@ uint8_t Comm_Get_Checksum(uint8_t *frame, uint8_t size)
 	return (sum & 0XFF);
 }
 
-#if 0
-void Comm_TxFrame(void)
+#if 1
+void Comm_Delay(void);
+
+void Comm_TxString(void)
 {
-	char string[] = "Test String\n\r";
+	char string[] = "application running\n\r";
 
 	while (1)
 	{
@@ -109,9 +111,9 @@ void Comm_Delay(void)
 {
 	uint16_t i, j;
 
-	for (i = 0; i < 1000; i++)
+	for (i = 0; i < 1500; i++)
 	{
-		for (j = 0; j < 500; j++);
+		for (j = 0; j < 1000; j++);
 	}
 }
 #endif
